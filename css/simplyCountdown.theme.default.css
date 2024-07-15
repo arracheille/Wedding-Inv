@@ -1,0 +1,26 @@
+.simply-countdown {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.simply-countdown > .simply-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+}
+
+.simply-countdown > .simply-section .simply-amount{
+  font-size: 7rem;
+}
+
+.simply-countdown > .simply-section .simply-word {
+  font-size: 2rem;
+}

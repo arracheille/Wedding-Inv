@@ -1,0 +1,913 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Tangerine:wght@700&display=swap);
+
+:root {
+  --db: #3c2a21;
+  --cream: #fcf5ed;
+  --green: #4e6c50;
+  --lg: #d5cea3;
+  --lb: #65493c;
+  --tangerine: "Tangerine", serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--cream);
+}
+
+section {
+  padding: 4rem 9%;
+}
+
+.tangerine {
+  font-family: var(--tangerine);
+  font-size: 3rem;
+  margin-right: 0.4rem;
+}
+
+.tangerine-title {
+  font-family: var(--tangerine);
+  font-size: 6.7rem;
+  margin-right: 0.4rem;
+}
+
+.tangerine-sub {
+  font-family: var(--tangerine);
+  font-size: 2.5rem;
+  margin-right: 0.2rem;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.rozha {
+  font-family: "Rozha One", serif;
+  letter-spacing: 0.5px;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+.span-and {
+  font-size: 4rem;
+}
+
+.button {
+  padding: 0.9rem 2.5rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: fit-content;
+  max-height: fit-content;
+  color: var(--cream);
+}
+
+.brown {
+  background: var(--db);
+}
+
+.green {
+  background: var(--green);
+}
+
+.cream {
+  background: var(--cream);
+}
+
+.light-brown {
+  background: var(--lb);
+}
+
+.light-green {
+  background: var(--lg);
+}
+
+.text-brown {
+  color: var(--db);
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.text-cream {
+  color: var(--cream);
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100vw;
+  background: url(../IMG/webp-2/bride-groom-having-their-wedding-beach.webp);
+  background-position: top;
+  background-size: cover;
+}
+
+.title-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+
+.title-button br {
+  display: none;
+}
+
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  text-align: center;
+}
+
+.quotes-source {
+  font-size: 0.9rem;
+}
+
+.bride-groom {
+  background: url("../IMG/decor-webp/background-paper-flower.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.bride-groom-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.bride-groom-content {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bride-groom-info {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.bride-groom-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.and-content {
+  max-width: 20%;
+  font-size: 9rem;
+  display: flex;
+  align-items: center;
+}
+
+.std-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.std-content {
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.std-content .heading {
+  text-align: start;
+}
+
+.std-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.std-content th,
+.std-content td {
+  width: 14.28%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.std-content tbody tr:first-child td:first-child,
+.std-content tbody tr:last-child td:nth-child(5),
+.std-content tbody tr:last-child td:nth-child(6),
+.std-content tbody tr:last-child td:nth-child(7) {
+  opacity: 0.3;
+}
+
+.std-content tbody tr:last-child td:nth-child(2) {
+  background-color: var(--lb);
+  border-radius: 5px;
+  color: var(--lg);
+}
+
+.std-content table tr td {
+  vertical-align: center;
+  padding: 0.7rem 0;
+}
+
+.std-content table tr th {
+  vertical-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.std-content img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.dress-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.color-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.color-content {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+}
+
+.story .heading {
+  margin-bottom: 1rem;
+}
+
+.table-story {
+  border-collapse: separate;
+  border-spacing: 1rem;
+}
+
+.text-responsive {
+  display: none;
+}
+
+.table-story td {
+  text-align: justify;
+  width: 50%;
+}
+
+.table-story td.img {
+  position: relative;
+  height: 100%;
+}
+
+.table-story td.img p {
+  z-index: 2; /* Pastikan teks berada di atas overlay */
+}
+
+.firstmet {
+  background: url("../IMG/decor-webp/dark.webp"), url("../IMG/webp-2/marc-a-sporys-NO8Sj4dKE8k-unsplash.webp");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
+
+.firstdate {
+  background: url("../IMG/decor-webp/dark.webp"), url("../IMG/webp-2/beautiful-couple-having-their-wedding-beach.webp");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
+
+.proposal {
+  background: url("../IMG/decor-webp/dark.webp"), url("../IMG/webp-2/wedding-couple-their-wedding-day-budapest.webp");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
+
+.gwr {
+  position: relative;
+  background: url("../IMG/decor-webp/background-paper-flower.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.gallery-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 32%;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rsvp-w-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.inputs {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.input-wishes-name,
+.input-wishes {
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.input-wishes-name {
+  padding: 1rem;
+}
+
+.input-wishes {
+  padding: 1rem 1rem 5rem 1rem;
+}
+
+.radio-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.radio-container {
+  width: 100%;
+}
+
+.radio-container input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-container label {
+  display: block;
+  padding: 0.7rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: var(--db);
+  color: var(--cream);
+  border: 1px solid var(--cream);
+  font-size: 1.1rem;
+}
+
+.radio-container input[type="radio"]:checked + label,
+.radio-container input[type="radio"]:hover + label:hover {
+  color: var(--db);
+  background: var(--cream);
+  transition: 600ms ease;
+}
+
+.rsvp-w-content button {
+  width: 50%;
+  padding: 1rem 0;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.ty-wishes .sub-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ty-wishes-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 10px;
+  gap: 1rem;
+}
+
+.ty-name {
+  font-weight: 600;
+}
+
+.ty-text {
+  text-align: justify;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+.owl-prev span,
+.owl-next span {
+  color: var(--cream);
+}
+
+.thank-you-sect {
+  position: relative;
+  background: url("../IMG/decor-webp/background-paper-flower.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.thank-you-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.thank-you-container img {
+  width: 70%;
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.thank-you-container p {
+  max-width: 60%;
+  font-weight: 600;
+}
+
+.thank-you-container p.heading {
+  padding-bottom: 1rem;
+  border-bottom: solid 1.5px var(--db);
+}
+
+footer {
+  padding: 1.2rem 0 6rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-music {
+  padding: 0;
+  position: fixed;
+  bottom: 20vh;
+  right: 5vw;
+  z-index: 9;
+  max-width: 20vw;
+}
+
+#fixedMusicElement {
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#fixedMusicElement i {
+  display: inline-block;
+  width: 100%;
+}
+
+#fixedMusicElement i.rotating {
+  animation: rotate 6s linear infinite;
+  will-change: transform;
+}
+
+.navigation {
+  padding: 0;
+  position: fixed;
+  bottom: 2vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.nav-content {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.second {
+  transition-delay: 200ms;
+}
+
+.third {
+  transition-delay: 400ms;
+}
+
+.fourth {
+  transition-delay: 600ms;
+}
+
+.fifth {
+  transition-delay: 800ms;
+}
+
+.sixth {
+  transition-delay: 1000ms;
+}
+
+.seventh {
+  transition-delay: 1200ms;
+}
+
+.eighth {
+  transition-delay: 1400ms;
+}
+
+.nineth {
+  transition-delay: 1600ms;
+}
+
+.ten {
+  transition-delay: 1800ms;
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero {
+    justify-content: start;
+    align-items: center;
+  }
+
+  .title-button {
+    flex-direction: column;
+    align-items: start;
+    max-width: 50vw;
+  }
+
+  .bride-groom-content {
+    width: 38%;
+  }
+
+  .and-content {
+    font-size: 5rem;
+    padding-bottom: 3rem;
+  }
+
+  .table-story {
+    border-collapse: separate;
+    border-spacing: 0 1rem; /* 0 untuk kiri dan kanan, 1rem untuk atas dan bawah */
+  }
+
+  .table-story td {
+    width: 100%;
+  }
+
+  .table-story td.img {
+    display: none;
+  }
+
+  .table-story td {
+    padding: 1rem;
+  }
+
+  .table-story tr:first-child {
+    background: url("../IMG/decor-webp/dark.webp"), url("../IMG/webp-2/marc-a-sporys-NO8Sj4dKE8k-unsplash.webp");
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+  }
+  .table-story tr:nth-child(2) {
+    background: url("../IMG/decor-webp/dark.webp"), url("../IMG/webp-2/beautiful-couple-having-their-wedding-beach.webp");
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+  }
+  .table-story tr:nth-child(3) {
+    background: url("../IMG/decor-webp/dark.webp"), url("../IMG/webp-2/wedding-couple-their-wedding-day-budapest.webp");
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+  }
+
+  .text-responsive {
+    display: block;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .tangerine {
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
+  }
+
+  .rozha {
+    letter-spacing: 0.2px;
+  }
+
+  .heading {
+    font-size: 1.7rem;
+  }
+
+  .sub-heading {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+
+  .tangerine-title {
+    margin-right: 0.2rem;
+  }
+
+  .std-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .bride-groom-container {
+    align-items: start;
+  }
+
+  .bride-groom-content {
+    width: 40%;
+  }
+
+  .and-content {
+    display: none;
+  }
+
+  .std-content {
+    width: 100%;
+  }
+
+  .color-container {
+    gap: 0.5rem;
+  }
+
+  .color-content {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 2rem 9%;
+  }
+
+  .hero {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero p {
+    text-align: center;
+  }
+
+  .title-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-button br {
+    display: block;
+  }
+
+  .bride-groom-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .bride-groom-content {
+    width: 100%;
+  }
+
+  .and-content {
+    display: none;
+  }
+
+  .bride-groom-info {
+    gap: 0.5rem;
+  }
+
+  .std-content th,
+  .std-content td {
+    font-size: 0.8rem;
+  }
+
+  .color-content {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 1rem;
+  }
+
+  .photo-gallery {
+    flex-direction: column;
+  }
+
+  .gallery-columns {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .rsvp-w-container {
+    margin-top: 2rem;
+  }
+
+  .inputs {
+    gap: 1rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .radio-box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .rsvp-w-content button {
+    padding: 0.7rem 0;
+  }
+
+  .ty-wishes-container {
+    flex-direction: column;
+  }
+
+  .thank-you-container img {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .thank-you-container p {
+    max-width: 100%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.7rem 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .tangerine {
+    font-size: 1.9rem;
+    margin-right: 0.2rem;
+  }
+
+  .tangerine-title {
+    font-size: 5rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .sub-heading {
+    font-size: 1.1rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .btn,
+  .button {
+    padding: 0.5rem 1.7rem;
+    font-size: 0.8rem;
+  }
+
+  .quotes .heading {
+    font-size: 1rem;
+  }
+
+  input[type="text"],
+  .radio-container input[type="radio"],
+  .radio-container label,
+  .rsvp-w-content button {
+    font-size: 0.8rem;
+  }
+
+  .thank-you-sect p.text.third {
+    font-size: 0.75rem;
+  }
+}
